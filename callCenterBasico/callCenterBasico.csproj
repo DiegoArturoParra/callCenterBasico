@@ -98,10 +98,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="View\FormularioPQRS.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Code\Encapsulate\Epqrs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\FormularioPQRS.aspx.cs">
+      <DependentUpon>FormularioPQRS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\FormularioPQRS.aspx.designer.cs">
+      <DependentUpon>FormularioPQRS.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -114,9 +123,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Code\Data\" />
-    <Folder Include="App_Code\Encapsulate\" />
     <Folder Include="Controller\" />
-    <Folder Include="View\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
